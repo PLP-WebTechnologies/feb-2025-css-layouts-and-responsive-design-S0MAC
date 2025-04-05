@@ -1,0 +1,88 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4a90e2;
+    padding: 1rem 2rem;
+    color: rgb(9, 5, 5);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+  }
+  
+  /* Main Layout with Flexbox */
+  .main-container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  /* Content and Sidebar */
+  .content {
+    flex: 3;
+  }
+  
+  .sidebar {
+    flex: 1;
+    background-color: #e3ecf6;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  /* Media Queries */
+  
+  /* Tablet View */
+  @media (max-width: 768px) {
+    .main-container {
+      flex-direction: column;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: flex-end;
+    }
+  }
+  
+  /* Mobile View */
+  @media (max-width: 480px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      align-items: flex-start;
+    }
+  
+    .main-container {
+      padding: 1rem;
+    }
+  }
+  
